@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contoh Obyek 3D dengan A-Frame</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Membuat kubus dengan posisi dan warna acak -->
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+
+      <!-- Membuat bola dengan posisi dan skala acak -->
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+
+      <!-- Membuat silinder dengan posisi, skala, dan material acak -->
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="metal"></a-cylinder>
+
+      <!-- Membuat kerucut dengan posisi dan rotasi acak -->
+      <a-cone position="-1 1 -5" radius-bottom="0.5" radius-top="0.1" height="2" color="#7BC8A4" rotation="45 0 0"></a-cone>
+
+      <!-- Membuat prisma dengan posisi, skala, dan material acak -->
+      <a-prism position="1 0.5 -5" height="1.5" radius="1" color="#FF6347" material="wood"></a-prism>
+
+      <!-- Membuat bidang dengan tekstur acak -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" material="src: https://cdn.aframe.io/a-painter/images/floor.jpg"></a-plane>
+      
+      <!-- Pencahayaan -->
+      <a-entity light="type: point; intensity: 1; distance: 10; decay: 1; color: #FFFFFF; position: 0 3 -5"></a-entity>
+      
+      <!-- Kamera -->
+      <a-entity camera position="0 1.6 0" look-controls></a-entity>
+    </a-scene>
+  </body>
+</html>
